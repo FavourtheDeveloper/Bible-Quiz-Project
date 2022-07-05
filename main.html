@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png"/>
+    <title>RLCC QUIZ</title>
+
+    <style>
+        body{
+            background-color: pink;
+            width: 80%;
+            margin: auto;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .question{
+            color: rgb(102, 3, 3);
+        }
+
+        .button{
+            background-color: red;
+            border: 2px solid blue;
+            padding: 10px 15px;
+            color: whitesmoke;
+            font-size: 22px;
+        }
+
+        #userName{
+            padding: 15px;
+            border-radius: 2px solid blue;
+        }  
+
+        .top{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+    <h2>RLCC QUIZ</h2>
+    <input type="text" id="userName" placeholder="Enter your Name Here"> <br>
+    <small>Please, we are to screenshot our scores and send to the Church Whatsapp Group 😊😊😊</small>
+    <hr>
+    </div>
+    <form name="quiz" id="quiz">
+        
+        <div>
+            <p class="question">1. The lesson "Intimacy with God" was taken from the book of _________?</p>
+            <p><input type="radio" name="question1" value="John"> (a) John</p>
+            <p><input type="radio" name="question1" value="Psalm"> (b) Psalm</p>
+            <p><input type="radio" name="question1" value="James"> (c) James</p>
+        </div>
+
+        <div>
+            <p class="question">2. ________ walked with God and was not recorded to be dead or buried?</p>
+            <p><input type="radio" name="question2" value="Enoch"> (a) Enoch</p>
+            <p><input type="radio" name="question2" value="Moses"> (b) Moses</p>
+            <p><input type="radio" name="question2" value="Abraham"> (c) Abraham</p>
+        </div>
+    
+        <div>
+            <p class="question">3. Who was called the friend of God in the book of James 2:25 due to his walk with the Lord?</p>
+            <p><input type="radio" name="question3" value="Enoch"> (a) Enoch</p>
+            <p><input type="radio" name="question3" value="Moses"> (b) Moses</p>
+            <p><input type="radio" name="question3" value="Abraham"> (c) Abraham</p>
+        </div>
+         
+        <div>
+            <p class="question">4. All these are the ways to develop intimacy with God, except?</p>
+            <p><input type="radio" name="question4" value="praying in tongue"> (a) praying in tongue</p>
+            <p><input type="radio" name="question4" value="helping a friend"> (b) helping a friend</p>
+            <p><input type="radio" name="question4" value="making intimacy our priority"> (c) making intimacy our priority</p>
+        </div>
+           
+        <div>
+            <p class="question">5. Who was comfortable and bold enough to lean on Jesus bossom according to John 13:25</p>
+            <p><input type="radio" name="question5" value="John the Baptist"> (a) John the Baptist</p>
+            <p><input type="radio" name="question5" value="John the Beloved"> (b) John the Beloved</p>
+            <p><input type="radio" name="question5" value="John the brother of Jesus"> (c) John the brother of Jesus</p>
+        </div>
+            
+        <div>
+            <p class="question">6. There are _______ things that God hates according to Proverb 6:16-19</p>
+            <p><input type="radio" name="question6" value=5> (a) 5</p>
+            <p><input type="radio" name="question6" value=6> (b) 6</p>
+            <p><input type="radio" name="question6" value=7> (c) 7</p>
+        </div>
+       
+        <div>
+            <p class="question">7. Why should we observe true worship?</p>
+            <p><input type="radio" name="question7" value="It is a must"> (a) It is a must</p>
+            <p><input type="radio" name="question7" value="We are forced to"> (b) We are forced to</p>
+            <p><input type="radio" name="question7" value="I don't know">  (c) I don't know</p>
+        </div>
+          
+        <div>
+            <p class="question">8. Spiritual worship continues in heaven (Yes/No)?</p>
+            <p><input type="radio" name="question8" value="Yes"> (a) Yes</p>
+            <p><input type="radio" name="question8" value="No"> (b) No</p>
+            <p><input type="radio" name="question8" value="Not sure"> (c) Not sure</p>
+        </div>
+       
+        <div>
+            <p class="question">9. You are created to?</p>
+            <p><input type="radio" name="question9" value="serve"> (a) serve</p>
+            <p><input type="radio" name="question9" value="worship"> (b) worship</p>
+            <p><input type="radio" name="question9" value="all of the above"> (c) all of the above</p>
+        </div>
+           
+        <div>
+            <p class="question">10. Who are the people that can worship according to Psalm 24:3-5?</p>
+            <p><input type="radio" name="question10" value="People with clean hands, a pure heart and those who do not lift up their soul unto vanity nor swear deceitfully"> (a) People with clean hands, a pure heart and those who do not lift up their soul unto vanity nor swear deceitfully</p>
+            <p><input type="radio" name="question10" value="People in a department in church"> (b) People in a department in church</p>
+            <p><input type="radio" name="question10" value="He who dress well"> (c) He who dress well</p>
+        </div>
+
+       <input type="button" id="done" class="button" value="I'm Done!" onclick="check()">
+    </form>
+
+    <h3 id="reply"></h3>
+    
+     
+    
+
+</body>
+</html>
